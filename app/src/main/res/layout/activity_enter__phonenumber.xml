@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_5"
+    tools:context="com.safedoctor.safedoctor.UI.Activities.Enter_Phonenumber">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_medium"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="Verify your phone number"/>
+</LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp">
+        <TextView
+            android:layout_margin="@dimen/spacing_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_valid_intro"
+            android:textColor="@color/grey_80"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_medium">
+            <TextView
+                android:layout_margin="@dimen/spacing_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_enter_explain"
+                android:textColor="@color/grey_80"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                />
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/select_country"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/phonenumber_message"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="@string/select_country"
+                android:padding="5dp"
+                android:textAlignment="center"
+                app:ccpDialog_keyboardAutoPopup="true"
+                app:ccp_clickable="true"
+                app:ccp_defaultNameCode="GH"
+                app:ccp_showFullName="true"
+                app:ccp_textSize="16dp"
+                app:paddingStart="23dp"
+                android:visibility="visible"
+                />
+
+                <EditText
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phonenumber"
+                    android:inputType="phone"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="@dimen/spacing_large"/>
+
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_rounded_primary"
+                    android:onClick="onClickValidateNow"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/spacing_large"
+                     />
+
+            <TextView
+                android:id="@+id/resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend Code"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@+id/frmcard"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="0dp">
+        </View>
+        <TextView
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/grey_80"
+            android:text="Already have the validation code?"/>
+
+        <TextView
+            android:id="@+id/btn_validatenow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:textStyle="bold"
+            android:textColor="@color/grey_80"
+            android:clickable="true"
+            android:onClick="onClickValidateNow"/>
+    </LinearLayout>
+
+
+</LinearLayout>

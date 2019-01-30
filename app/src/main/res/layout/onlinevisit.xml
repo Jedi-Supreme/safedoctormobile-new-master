@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="1/3"
+        android:id="@+id/countdown"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:textColor="@color/red_300"
+        android:text="Search Visits"
+        android:id="@+id/searchvisit"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/doctorview">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/chat_type_img"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_left"
+            android:id="@+id/leftarrow"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Kwabena Berko Oseo Larbi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Tomorrow - 10:45 AM"
+                android:textColor="@color/textDarkColor"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/chat_type_img"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/rightarrow"
+            android:layout_toStartOf="@+id/rightarrow"
+            android:src="@drawable/vid_64px" />
+
+
+        <ImageView
+
+            android:id="@+id/rightarrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/tab_layout">
+
+
+            <TextView
+                android:id="@+id/clinicalnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Clinical Notes"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/sysreviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="System Reviews"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Complaints"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/diagnoses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Diagnoses"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/examfindings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Exam Findings"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/referrals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Referrals"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/requests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Service Requests"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/drugs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Prescription Drugs"
+                android:textColor="#fff"
+                android:tag="btn"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+
+            android:paddingBottom="5dp"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

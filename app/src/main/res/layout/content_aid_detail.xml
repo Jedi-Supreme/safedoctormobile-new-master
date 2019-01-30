@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="com.safedoctor.safedoctor.UI.Activities.AidDetail"
+	tools:showIn="@layout/activity_post_detail">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		
+		<ImageView
+			android:background="@color/grayColor"
+			android:id="@+id/aidImageView"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:scaleType="fitCenter"
+			android:adjustViewBounds="true"/>
+		
+		<LinearLayout
+			android:paddingLeft="@dimen/activity_horizontal_margin"
+			android:paddingRight="@dimen/activity_horizontal_margin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/aidTitle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/textDarkColor"
+				android:textSize="24sp"
+			/>
+			
+			<TextView
+				android:layout_marginTop="20dp"
+				android:id="@+id/aidActionsToTake"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/textLightDarkColor"
+				android:textSize="15sp"
+				android:paddingBottom="10dp"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+</ScrollView>

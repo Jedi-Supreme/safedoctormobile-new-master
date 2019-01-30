@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help"
+        android:title="Help" />
+    <item
+        android:id="@+id/action_change_password"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_change_phone"
+        android:orderInCategory="100"
+        android:title="Change Phone number"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_peripherals"
+        android:orderInCategory="100"
+        android:title="Medical Peripherals"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/places_ic_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:iconTint="@color/white"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    
+</menu>

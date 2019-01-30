@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.safedoctor.safedoctor.Utils.DashboardLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:background="#f8f9fe"
+	tools:context="com.safedoctor.safedoctor.UI.Activities.Dashboard"
+	tools:showIn="@layout/activity_dashboard">
+	
+	<Button
+		android:id="@+id/btn_news_feed"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_appointment_lg"
+		android:textAllCaps="false"
+		android:textStyle="normal"
+		android:text="@string/appointments_txt" />
+	
+	<!--  Friends Button -->
+	<Button
+		android:id="@+id/btn_friends"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_first_aid_lg"
+		android:textAllCaps="false"
+		android:textStyle="normal"
+		android:text="@string/first_aid_txt" />
+	
+	<!--  Messages Button -->
+	<Button
+		android:id="@+id/btn_messages"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_health_tips_lg"
+		android:textAllCaps="false"
+		android:textStyle="normal"
+		android:text="@string/services_txt" />
+	
+	<!--  Places Button -->
+	<Button
+		android:id="@+id/btn_places"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_records_lg"
+		android:textAllCaps="false"
+		android:textStyle="normal"
+		android:text="@string/medical_records_txt" />
+	
+	<!--  Events Button -->
+	<Button
+		android:id="@+id/btn_events"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_chat_lg"
+		android:textAllCaps="false"
+		android:text="@string/chat_txt"
+		android:textStyle="normal"
+	/>
+	
+	<!--  Photos Button -->
+	<Button
+		android:id="@+id/btn_photos"
+		style="@style/DashboardButton"
+		android:drawableTop="@drawable/ic_posts_lg"
+		android:textAllCaps="false"
+		android:textStyle="normal"
+		android:text="@string/health_posts_txt" />
+
+</com.safedoctor.safedoctor.Utils.DashboardLayout>

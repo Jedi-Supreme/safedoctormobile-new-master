@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tip"
+        android:icon="@drawable/ic_help"
+        android:title="Tips" />
+
+    <!--<item
+        andridd:idid@+id/navigation_cancel"
+        android:icon="@drawable/ic_cancel_white_24dp"
+        android:title="Cancel" />
+
+    <item
+        andridd:idid@+id/navigation_edit"
+        android:icon="@drawable/ic_accountedit"
+        android:title="Edit" />
+        -->
+
+    <item
+        android:id="@+id/navigation_save"
+        android:icon="@drawable/ic_done"
+        android:title="Save" />
+</menu>

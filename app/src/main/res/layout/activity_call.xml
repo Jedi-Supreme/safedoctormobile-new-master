@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.safedoctor.safedoctor.UI.Activities.CallActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/login_bg"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8000"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CALLING..."
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:id="@+id/calling_tv"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CALLING..."
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:id="@+id/count_down_tv"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_call_end_white_48dp"
+            android:background="@drawable/mic_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/button_end_call"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

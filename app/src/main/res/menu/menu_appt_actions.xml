@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_showappt"
+        android:icon="@drawable/ic_view_column"
+        android:orderInCategory="100"
+        android:title="View"
+        app:showAsAction="withText|ifRoom" />
+    <item
+        android:id="@+id/mnu_apptreschedule"
+        android:icon="@drawable/ic_appointment"
+        android:orderInCategory="100"
+        android:title="Reschedule"
+        app:showAsAction="withText|ifRoom" />
+    <item
+        android:id="@+id/mnu_cancelappt"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="100"
+        android:title="Cancel"
+        app:showAsAction="withText|ifRoom" />
+
+</menu>

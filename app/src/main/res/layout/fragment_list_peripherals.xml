@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medical Devices"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/green_500"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pairedbluetooth"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Added Devices"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/discoverbluetooth"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Search New Devices"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+        <TextView
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Temperature : 0"
+    android:textStyle="bold"
+    android:textSize="24sp"
+    android:textColor="@color/colorPrimaryDark"
+    android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/spacing_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

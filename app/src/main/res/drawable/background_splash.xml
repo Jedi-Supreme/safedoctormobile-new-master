@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/white"/>
+  <!--  <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/safedoktor_doctor"/>
+    </item>
+-->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/splashsafedoktor"/>
+    </item>
+
+
+</layer-list>

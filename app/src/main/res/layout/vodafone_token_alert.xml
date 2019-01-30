@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Token"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:padding="5dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter Vodafone cash token"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg_grey"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:id="@+id/vodaTokenEt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:background="@drawable/button_style_negative"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_cancel"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONFIRM"
+            android:background="@drawable/button_style_flat"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:id="@+id/btn_confirm"
+            android:padding="16dp"
+            android:gravity="center"
+            android:clickable="true"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

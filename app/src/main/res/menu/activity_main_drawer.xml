@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<group android:checkableBehavior="single">
+
+		<item
+			android:id="@+id/action_home"
+			android:icon="@drawable/ic_home"
+			android:title="Home"
+			/>
+		<item
+			android:id="@+id/action_appointments"
+			android:icon="@drawable/ic_appointment"
+			android:title="@string/appointments_txt"
+			app:actionLayout="@layout/badge_navigation_colored"/>
+		<!--<item-->
+			<!--andridd:idid@+id/action_chat"-->
+			<!--android:icon="@drawable/ic_chat"-->
+			<!--android:title="@string/chat_txt"/>-->
+
+		<item
+			
+			android:title="@string/medical_records_txt">
+			<menu>
+				<group android:checkableBehavior="single">
+					<item
+						android:id="@+id/action_online_medical_records"
+						android:icon="@drawable/ic_online_medical_records"
+						android:title="@string/online_medical_records_txt"
+						app:actionLayout="@layout/badge_navigation_colored"/>
+
+					<item
+						android:id="@+id/action_clinic_visit_medical_records"
+						android:icon="@drawable/ic_clinic_visit_medical_records"
+						android:title="@string/clinic_visit_medical_records_txt"
+						app:actionLayout="@layout/badge_navigation_colored"/>
+
+					<item
+						android:id="@+id/action_manage_vitals"
+						android:icon="@drawable/ic_trending_up"
+						android:title="@string/vitalstatistics_txt"
+						/>
+				</group>
+			</menu>
+		</item>
+
+
+        <item
+            android:title="@string/to_do">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/action_reminder"
+                        android:icon="@drawable/ic_notification"
+                        android:title="@string/reminder_txt"
+						app:actionLayout="@layout/badge_navigation_colored" />
+                    <item
+                        android:id="@+id/action_referral"
+                        android:icon="@drawable/ic_referral"
+                        android:title="@string/referral_txt"
+						app:actionLayout="@layout/badge_navigation_colored"
+						/>
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:title="@string/information_txt">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/action_health_posts"
+                        android:icon="@drawable/ic_posts"
+                        android:title="@string/health_posts_txt"/>
+                    <item
+                        android:id="@+id/action_first_aid"
+                        android:icon="@drawable/ic_first_aid"
+                        android:title="@string/first_aid_txt"/>
+
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+	<item
+
+		android:title="@string/lbl_community">
+		<menu>
+			<group android:checkableBehavior="single">
+				<item
+					android:id="@+id/action_chat_room"
+					android:icon="@drawable/ic_chat"
+					android:title="@string/lbl_chatroom"/>
+				<item
+					android:visible="false"
+					android:id="@+id/action_social_media"
+					android:icon="@drawable/ic_globe_black"
+					android:title="@string/lbl_socialmedia"/>
+			</group>
+		</menu>
+	</item>
+
+	<item
+		android:title="@string/lbl_partners">
+		<menu>
+			<group android:checkableBehavior="single">
+				<item
+					android:id="@+id/action_hospitals"
+					android:icon="@drawable/ic_hospitals"
+					android:title="@string/lbl_hospitals"/>
+				<item
+					android:id="@+id/action_pharmacies"
+					android:icon="@drawable/ic_pharmacy"
+					android:title="@string/lbl_pharmacies"/>
+				<item
+					android:id="@+id/action_diagnostics"
+					android:icon="@drawable/ic_diagnostics"
+					android:title="@string/lbl_diagnostic"/>
+				<item
+					android:id="@+id/action_specialists"
+					android:icon="@drawable/ic_specialist"
+					android:title="@string/lbl_specialists"/>
+			</group>
+		</menu>
+	</item>
+<!-- Will handle this in code
+    <item
+        android:title="@string/personal_txt">
+        <menu>
+	<group
+		andridd:idid@+id/main_group"
+		android:checkableBehavior="single">
+
+		<item
+			andridd:idid@+id/action_biodata"
+			android:icon="@drawable/ic_profile"
+			android:title="@string/bio_data_txt"/>
+		
+		<item
+			andridd:idid@+id/action_logout"
+			android:icon="@drawable/ic_logout"
+			android:title="@string/logout_txt"/>
+	
+	</group>
+        </menu>
+    </item>
+
+	<group
+		andridd:idid@+id/grp_5"
+		android:checkableBehavior="single">
+		<item
+			andridd:idid@+id/nav_settings"
+			android:icon="@drawable/ic_settings"
+			android:title="Settings" />
+		<item
+			andridd:idid@+id/nav_help"
+			android:icon="@drawable/ic_help"
+			android:title="Help &amp; Feedback" />
+	</group>
+	-->
+
+</menu>

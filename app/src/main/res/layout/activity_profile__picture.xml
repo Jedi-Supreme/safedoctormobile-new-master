@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.safedoctor.safedoctor.UI.Activities.Profile_Picture">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey_900">
+
+
+        <!-- -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_circle"
+            android:clickable="true"
+            android:src="@drawable/user_placehoder"
+            app:civ_border_color="#FFF"
+            app:civ_border_width="2dp" />
+
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/selectProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profile_picture"
+            android:layout_alignLeft="@id/profile_picture"
+            android:layout_gravity="left|end"
+            app:srcCompat="@drawable/ic_camera"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:layout_anchorGravity="left|end" />
+
+        <!--<android.support.design.widget.FloatingActionButton
+            andridd:idid@+id/clearpicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottomid@+id/message"
+            android:layout_alignRighid"@id/message"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="right|end"
+            app:srcCompat="@drawable/ic_camera"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:layout_anchorGravity="right|end" /> -->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_next"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|end" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnidtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Type"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtidnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Number"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnnationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nationality"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnethnicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ethnicity"
+                android:focusable="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnoccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Occupation"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spneducationlevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Education Level"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnreligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Religion"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spndenomination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Denomination"
+                android:focusable="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+
+
+</LinearLayout>

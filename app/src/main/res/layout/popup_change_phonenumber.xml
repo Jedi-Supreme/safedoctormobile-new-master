@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Phone Number"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:background="@drawable/button_style_flat"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:id="@+id/lblinfo"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg_grey"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:inputType="phone"
+        android:id="@+id/txtphonenumber"
+        android:hint="Phone number"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/resetlayout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Reset Code"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/lbliinfo"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg_grey"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:id="@+id/txtresetcode"
+            android:hint="Reset Code"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:background="@drawable/button_style_negative"
+            android:layout_margin="5dp"
+            android:id="@+id/btncancelvalidate"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:clickable="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONFIRM"
+            android:background="@drawable/button_style_flat"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:id="@+id/btnconfirm"
+            android:padding="16dp"
+            android:gravity="center"
+            android:clickable="true"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I have reset code"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:id="@+id/btnhavecode"
+            android:padding="16dp"
+            android:gravity="center"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resend code"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:id="@+id/btnresendcode"
+            android:padding="16dp"
+            android:gravity="center"
+            android:clickable="true"
+
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

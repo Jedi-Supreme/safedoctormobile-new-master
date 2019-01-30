@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Region"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spndistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="District"
+                android:focusable="false"
+                 />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spntown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Town"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnhregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Region"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnhdistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home District"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnhtown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Town"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txthstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Street"                 />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txthometel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Home Telephone"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnwregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work Region"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnwdistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work District"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spnwtown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work Town"
+                android:focusable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtwstreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Work Street"                 />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_middle" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtworktel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Work Telephone"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

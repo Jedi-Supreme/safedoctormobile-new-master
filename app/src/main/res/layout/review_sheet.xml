@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/blue_300"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/reviewtype"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:hint="You are reviewing..." />
+
+    </android.support.design.widget.TextInputLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:indicatorColor="@color/white_greyish"
+        android:layout_marginTop="50dp"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/reviewlayout">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/retryquestion"
+            android:visibility="gone"
+            android:text="Retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:textColorHint="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/reviewtxt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Comments"
+                android:inputType="textCapSentences|textMultiLine" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/submitbtn"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+	<!--<include layout="@layout/appointment_list_item" />-->
+
+<RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="3"
+		android:id="@+id/appttab">
+
+		<TextView
+			android:id="@+id/booked"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/colorPrimaryDark"
+			android:padding="10dp"
+			android:text="Booked"
+			android:textColor="#fff"
+			android:tag="btn"
+			android:textSize="16sp"
+			android:textAlignment="center"/>
+		<View
+			android:layout_width="1dp"
+			android:layout_height="match_parent" />
+
+
+		<TextView
+			android:id="@+id/inprogress"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/colorPrimaryDark"
+			android:padding="10dp"
+			android:text="In Progress"
+			android:textColor="#fff"
+			android:tag="btn"
+			android:textSize="16sp"
+			android:textAlignment="center"/>
+		<View
+			android:layout_width="1dp"
+			android:layout_height="match_parent" />
+
+
+		<TextView
+			android:id="@+id/completed"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@color/colorPrimaryDark"
+			android:padding="10dp"
+			android:text="Completed"
+			android:textColor="#fff"
+			android:tag="btn"
+			android:textSize="16sp"
+			android:textAlignment="center"/>
+
+
+
+	</LinearLayout>
+
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/appointments_refresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/appttab"
+		android:layout_toEndOf="@+id/no_appointments_tv"
+		android:layout_toRightOf="@+id/no_appointments_tv">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/patient_appointments_recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+	<TextView
+		android:id="@+id/no_appointments_tv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:text="@string/no_appointments_yet"
+		android:textSize="17sp"
+		android:visibility="gone"
+		/>
+
+	<TextView
+		android:id="@+id/refreshbtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryDark"
+		android:padding="10dp"
+		android:text="Refresh"
+		android:textColor="#fff"
+		android:layout_alignBottom="@+id/no_appointments_tv"
+		android:visibility="gone"
+		android:textSize="16sp"
+		android:textAlignment="center"/>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/createAppointmentFAB"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="16dp"
+		app:srcCompat="@drawable/ic_add"
+		android:tint="@android:color/white"
+		app:layout_anchorGravity="bottom|end"
+		/>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
